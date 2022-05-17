@@ -1,0 +1,12 @@
+{
+  "name": "ts-sample",
+  "version": "1.0.0",
+  "description": "ts sample",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc sample.ts",
+    "start": "node sample.js"
+  },
+  "author": "amaia",
+  "license": "ISC"
+}
