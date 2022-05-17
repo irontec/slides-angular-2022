@@ -15,6 +15,9 @@ Para que eso funcione, ejecutar ese comando en el mismo directorio donde se encu
 
 Por defecto, el puerto configurado es el ```8081```.
 
+Para ver los ejemplos:
+- Copiar código de ejemplo en **index.ts**
+
 
 
 
