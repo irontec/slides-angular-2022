@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "auth": "libs/auth",
+    "nx-ejemplo-2": "apps/nx-ejemplo-2",
+    "nx-ejemplo-2-e2e": "apps/nx-ejemplo-2-e2e",
+    "nx-example-1": "apps/nx-example-1",
+    "nx-example-1-e2e": "apps/nx-example-1-e2e"
+  }
+}
