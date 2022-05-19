@@ -22,7 +22,7 @@ const usuario1: BasicUser = {
   skills: ['angular', 'typescript']
 }
 
-function getSkillList(user:BasicUser){
+function getSkillList(user:BasicUser): void {
   console.log(`Las skills de ${user.name} son ${user.skills}`)
 }
 

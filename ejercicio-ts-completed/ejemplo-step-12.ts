@@ -41,10 +41,12 @@ const usuario2: ProUser = {
 
 class BasicUserExample{
   user: BasicUser = null;
-  constructor (user: BasicUser){}
+  constructor (user: BasicUser){
+    this.user = user;
+  }
 
   addSkills(skill: string){
-    user.skills.push(skill)
+    this.user.skills.push(skill)
   }
 }
 

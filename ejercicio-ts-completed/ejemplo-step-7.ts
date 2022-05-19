@@ -12,7 +12,7 @@ interface BasicUser {
   skills: string[]
 }
 
-const usuario1: BasicUser = {
+let usuario1: BasicUser = {
   id: 1789,
   name: 'Rita',
   street: 'Done Bikendi Plaza, 2, piso 1º, 48001 Bilbo, Bizkaia',

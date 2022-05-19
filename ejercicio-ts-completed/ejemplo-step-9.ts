@@ -1,4 +1,4 @@
-//8. Definimos una función 'getSkillsList' que solo acepte un objeto de tipo BasicUser
+//9. Definimos una función 'getSkillsList' que solo acepte un objeto de tipo BasicUser
 
 type id = number | string;
 
@@ -23,7 +23,8 @@ const usuario1: BasicUser = {
 }
 
 function getSkillList(user:BasicUser, text?:string){
+  console.log(text)
   text ? console.log(`${text} ${user.name} son ${user.skills}`): console.log(`Las skills de ${user.name} son ${user.skills}`)
 }
 
-getSkillList(usuario1, 'Las habilidades más destacadas de');
+getSkillList(usuario1);

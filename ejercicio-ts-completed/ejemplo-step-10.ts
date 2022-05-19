@@ -32,3 +32,5 @@ function getSkillList(user:BasicUser, text?:string){
 }
 
 getSkillList(usuario1, 'Las habilidades más destacadas de');
+
+
