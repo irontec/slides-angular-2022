@@ -1,4 +1,4 @@
-## Ejemplos y ejercicios para curso Angular 
+## Ejemplos y ejercicios para curso Angular
 
 TYPESCRIPT
 - ts.examples
@@ -10,3 +10,6 @@ RXJS
 
 NX
 - nx-example
+
+EJEMPLO APP con SERVICIO API
+- weather-app
