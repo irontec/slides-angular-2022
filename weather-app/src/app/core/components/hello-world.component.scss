@@ -1,0 +1,41 @@
+:host {
+  --color: black;
+  display: block;
+  background-color: white;
+
+  h2, p {
+    color: var(--color);
+  }
+
+  input {
+    height: var(--input-height);
+  }
+
+  p.grow {
+    font-size: 100px;
+  }
+  p.highlight {
+    background-color: yellow;
+  }
+  button{
+    display: block;
+    margin: 20px;
+    width: 300px;
+  }
+  .buttons{
+    width: 100vw;
+  }
+  .response{
+    margin: 40px;
+  }
+}
+
+:host(.dark-mode),
+:host-context(.dark-mode)  {
+  background-color: black;
+  h2, p {
+    color: white;
+  }
+}
+
+

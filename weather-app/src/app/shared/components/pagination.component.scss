@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  margin-top: 45px;
+  text-align: center;
+  .icon {
+    --icon-color: #fff;
+  }
+
+  .current-page {
+    margin: 0 45px;
+    display: inline-block;
+  }
+}
