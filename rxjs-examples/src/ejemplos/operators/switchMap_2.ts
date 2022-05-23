@@ -1,33 +1,14 @@
-import { fromEvent, Observable, debounceTime, map, pluck, mergeAll, mergeMap, switchMap } from 'rxjs';
+import { fromEvent, pipe, interval , scan, map, concatMap } from 'rxjs';
 
-import { ajax } from 'rxjs/ajax';
+const source$ = fromEvent(window, 'click').pipe(
+    scan((acc)=>acc+1,0), // sumando (y emitiendo) el número de clicks
+  );
 
-// Referencias
-const body = document.querySelector('body');
-const textInput = document.createElement('input');
-const orderList = document.createElement('ol');
-body.append( textInput, orderList );
-
-// Streams
-const input$ = fromEvent<KeyboardEvent>( textInput, 'keyup' );
-
-const url = 'https://api.github.com/search/users?q='; // + fernando
-
- input$.pipe(
-    pluck('target','value'),
-    switchMap( texto => ajax.getJSON(url + texto)),
-    pluck('items')
-).subscribe( console.log );
-
-
-
-
-
-
-
-
-
-
-
-
-
+  source$.pipe( // Cada emisión de click
+     concatMap(clickNumber => {
+          // Se transforma en un interval cada "n" segundos (y subiendo)
+          console.log(`click ${clickNumber}`)
+          return interval(clickNumber * 1000)
+      }),
+      map((v)=>'OK' + v)
+  ).subscribe(v => console.log(v)); // OK

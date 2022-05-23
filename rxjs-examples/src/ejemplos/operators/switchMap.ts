@@ -1,14 +1,9 @@
-import { fromEvent, pipe, interval , scan, map, concatMap } from 'rxjs';
+import { fromEvent, interval, take, switchMap } from 'rxjs';
 
-const source$ = fromEvent(window, 'click').pipe(
-    scan((acc)=>acc+1,0), // sumando (y emitiendo) el número de clicks
-  );
+const clicks = fromEvent(document, 'click');
+const result = clicks.pipe(
+  switchMap(ev => interval(1000).pipe(take(4)))
+);
+result.subscribe(x => console.log(x));
+// Por cada click en el documento, se emitirán los valores del 0 al 3 a intervales de 1000ms. Si se vuelve a clicar, reinicia los valores
 
-  source$.pipe( // Cada emisión de click
-     concatMap(clickNumber => {
-          // Se transforma en un interval cada "n" segundos (y subiendo)
-          console.log(`click ${clickNumber}`)
-          return interval(clickNumber * 1000)
-      }),
-      map((v)=>'OK' + v)
-  ).subscribe(v => console.log(v)); // OK
