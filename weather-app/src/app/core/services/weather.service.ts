@@ -3,9 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { from, Observable, switchMap, of, map, filter, throwError } from "rxjs";
 import { WeatherData, WeatherInfo } from "../models/weather.model";
 
-const API_KEY = '0ba4a5a1b1522f77eba7e3080302ae87';
-
-
 @Injectable({
   providedIn: 'root'
 })
@@ -97,11 +94,6 @@ export class WeatherService {
   }
   constructor( private http: HttpClient){}
 
-  //Usuario: none_aretxalde
-// Contraseña: eCvEH0hV35
-// "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJ2IjoxLCJ1c2VyIjoibm9uZV9hcmV0eGFsZGUiLCJpc3MiOiJsb2dpbi5tZXRlb21hdGljcy5jb20iLCJleHAiOjE2NTMxMzMyNTYsInN1YiI6ImFjY2VzcyJ9.yNwxFasbqE1rfdCHm433Duv6q4Jb_hNgCARXZUMP-Gk3BBf0miDYcqcIP9Fkei9BznrIz0MWp0r3JKlTPKw_FA",
-// "token_type": "bearer"
-
   getTemperature(): Observable<number> {
     const todayDate = new Date().toISOString() ;
     const url = `https://api.meteomatics.com/${todayDate}/t_2m:C/52.520551,13.461804/json`;
@@ -157,7 +149,7 @@ export class WeatherService {
 
   private _getHeaders(): HttpHeaders {
     const token = ''
-    return new HttpHeaders({'Authorization':`Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJ2IjoxLCJ1c2VyIjoibm9uZV9hcmV0eGFsZGUiLCJpc3MiOiJsb2dpbi5tZXRlb21hdGljcy5jb20iLCJleHAiOjE2NTMyMzMyMDEsInN1YiI6ImFjY2VzcyJ9.hiqdZR71Xt8qz5ViF5d4e7nkusf6Z0iLFvhgUa2prcDDn6jatoCKd4173H3CYsmlWWUeoYWdTYlNKXUtm9jUBA`});
+    return new HttpHeaders({'Authorization':`Bearer token`}); // incluir token bueno, dura 2 días
   }
 
 }
