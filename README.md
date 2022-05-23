@@ -13,3 +13,6 @@ NX
 
 EJEMPLO APP con SERVICIO API
 - weather-app
+
+EJEMPLO NGRX PLATFORM
+- ngrx-platform-master (https://github.com/ngrx/platform)
