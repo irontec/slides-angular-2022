@@ -157,7 +157,7 @@ export class WeatherService {
 
   private _getHeaders(): HttpHeaders {
     const token = ''
-    return new HttpHeaders({'Authorization':`Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJ2IjoxLCJ1c2VyIjoibm9uZV9hcmV0eGFsZGUiLCJpc3MiOiJsb2dpbi5tZXRlb21hdGljcy5jb20iLCJleHAiOjE2NTMxMzMyNTYsInN1YiI6ImFjY2VzcyJ9.yNwxFasbqE1rfdCHm433Duv6q4Jb_hNgCARXZUMP-Gk3BBf0miDYcqcIP9Fkei9BznrIz0MWp0r3JKlTPKw_FA`});
+    return new HttpHeaders({'Authorization':`Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJ2IjoxLCJ1c2VyIjoibm9uZV9hcmV0eGFsZGUiLCJpc3MiOiJsb2dpbi5tZXRlb21hdGljcy5jb20iLCJleHAiOjE2NTMyMzMyMDEsInN1YiI6ImFjY2VzcyJ9.hiqdZR71Xt8qz5ViF5d4e7nkusf6Z0iLFvhgUa2prcDDn6jatoCKd4173H3CYsmlWWUeoYWdTYlNKXUtm9jUBA`});
   }
 
 }

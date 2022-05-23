@@ -1,7 +1,14 @@
-import { of, interval , mergeMap, map} from 'rxjs';
+import { fromEvent, pipe, interval , scan, map, mergeMap } from 'rxjs';
 
-const letters$ = of('a', 'b', 'c');
-const result$ = letters$.pipe(
-  mergeMap(x => interval(1000).pipe(map(i => x + i)))
-);
-result$.subscribe(x => console.log(x));
+const source$ = fromEvent(window, 'click').pipe(
+    scan((acc)=>acc+1,0), // sumando (y emitiendo) el número de clicks
+  );
+
+  source$.pipe( // Cada emisión de click
+     mergeMap(clickNumber => {
+          // Se transforma en un interval cada "n" segundos (y subiendo)
+          console.log(`click ${clickNumber}`)
+          return interval(clickNumber * 1000)
+      }),
+      map((v)=>'OK' + v)
+  ).subscribe(v => console.log(v)); // OK
