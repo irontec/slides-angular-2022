@@ -1,0 +1,12 @@
+:host {
+  --icon-color: #000;
+  --size: 24px;
+  --icon-width: var(--size);
+  --icon-height: var(--size);
+
+  svg {
+    width: var(--icon-width);
+    height: var(--icon-height);
+    fill: var(--icon-color);
+  }
+}
