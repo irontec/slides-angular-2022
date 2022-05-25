@@ -57,12 +57,13 @@ export class MoviesService {
         }
       })
       .then(res => {
-        if(res.success && res.success === false) { return res } 
+        if(res.success && res.success === false) { return res }
         const movie = {
           id: res.id,
           adult: res.adult,
           overview: res.overview,
           title: res.title,
+          subtitle: res.tagline,
           poster: IMAGE_BASEPATH + res.poster_path,
           vote: res.vote_average,
           genres: res.genres

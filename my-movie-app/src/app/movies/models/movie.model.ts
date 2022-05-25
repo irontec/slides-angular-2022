@@ -1,6 +1,7 @@
 export interface Movie {
   id: number;
   title: string;
+  subtitle: string;
   overview: string;
   poster?: string;
   adult: boolean;

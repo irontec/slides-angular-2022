@@ -1,0 +1,15 @@
+:host {
+ .movie-info{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+ .overview{
+   padding: 5%;
+   max-width: 70vw;
+ }
+ .image{
+   max-width: 45vw;
+   margin: 5%;
+ }
+}
