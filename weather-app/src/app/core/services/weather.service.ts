@@ -147,9 +147,27 @@ export class WeatherService {
     );
   }
 
+  getTemperatureMap(): Observable<number> {
+    const todayDate = new Date().toISOString() ;
+    const url = `https://api.meteomatics.com/${todayDate}/t_2m:C/52.520551,13.461804/json`;
+    return this.http.get<WeatherInfo>(url,  { headers: this._getHeaders() }).pipe(
+   // return of(this.mockedResponseTemp) .pipe(
+      switchMap((res) => {
+        if (!res.data) {
+          return throwError(res);
+        } else {
+          return from(res.data).pipe(
+            filter (dato=> dato.parameter === 't_2m:C'),
+            map((t)=>t.coordinates[0].dates[0].value )
+          )
+        }
+      })
+    );
+  }
+
   private _getHeaders(): HttpHeaders {
     const token = ''
-    return new HttpHeaders({'Authorization':`Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJ2IjoxLCJ1c2VyIjoibm9uZV9hcmV0eGFsZGUiLCJpc3MiOiJsb2dpbi5tZXRlb21hdGljcy5jb20iLCJleHAiOjE2NTM1Njg0ODcsInN1YiI6ImFjY2VzcyJ9.7nUYmzZWERBFxsJSK4Y5IYS7mhkNacidcx_U4r-bl6c0y9F2oQYdPPGINqfbJ_nJFgbyXUSEFAYuZ7Rnw3FzzQ`}); // incluir token bueno, dura 2 días
+    return new HttpHeaders({'Authorization':`Bearer token`}); // incluir token bueno, dura 2 días
   }
 
 }
