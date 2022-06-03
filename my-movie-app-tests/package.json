@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "e2e": "cypress run --browser=chrome --spec 'cypress/e2e/my-movie-app/*'",
+    "e2e:open":"cypress open --browser=chrome",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
