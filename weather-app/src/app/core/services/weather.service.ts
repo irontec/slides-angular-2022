@@ -149,7 +149,7 @@ export class WeatherService {
 
   private _getHeaders(): HttpHeaders {
     const token = ''
-    return new HttpHeaders({'Authorization':`Bearer token`}); // incluir token bueno, dura 2 días
+    return new HttpHeaders({'Authorization':`Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJ2IjoxLCJ1c2VyIjoibm9uZV9hcmV0eGFsZGUiLCJpc3MiOiJsb2dpbi5tZXRlb21hdGljcy5jb20iLCJleHAiOjE2NTM1Njg0ODcsInN1YiI6ImFjY2VzcyJ9.7nUYmzZWERBFxsJSK4Y5IYS7mhkNacidcx_U4r-bl6c0y9F2oQYdPPGINqfbJ_nJFgbyXUSEFAYuZ7Rnw3FzzQ`}); // incluir token bueno, dura 2 días
   }
 
 }

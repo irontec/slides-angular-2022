@@ -31,7 +31,7 @@ import {
     </button>
     <div class="response" *ngIf="tempChecked">
       <h1>TEMPERATURA</h1>
-      <p [highlight]="color" >La temperatura es de {{ temperatura$ | async }} ºC</p>
+      <p [highlight] >La temperatura es de {{ temperatura$ | async }} ºC</p>
     </div>
     <div class="response" *ngIf="humidityChecked">
       <h1>HUMEDAD RELATIVA</h1>

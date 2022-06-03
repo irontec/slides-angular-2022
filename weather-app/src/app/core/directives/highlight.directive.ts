@@ -7,11 +7,14 @@ export class HighLightDirective {
   _defaultColor: string = '';
   @Input() highlight = '';
   @Input() set defaultColor(value: string) {
+
     this.elRef.nativeElement.style.backgroundColor = value;
     this._defaultColor = value;
   };
 
-  constructor(private elRef : ElementRef) {}
+  constructor(private elRef : ElementRef) {
+    console.log(elRef.nativeElement)
+  }
 
   @HostListener('mouseenter')
   onMouseEnter() {
