@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-07T16:35:41.126Z",
+    "end": "2022-06-07T16:35:42.654Z",
+    "duration": 1528,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4ba80053-0e37-4282-af0b-ffe69665ab6b",
+      "title": "",
+      "fullFile": "cypress/e2e/my-movie-app/01-dashboard.cy.js",
+      "file": "cypress/e2e/my-movie-app/01-dashboard.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "23cfeba3-acb7-4004-a777-ba317e1cb8c0",
+          "title": "Dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "fbfdbb2d-9247-4fa4-b844-64ede3d526f2",
+              "title": "Ficha de usuario",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Se realiza la petición del usuario",
+                  "fullTitle": "Dashboard Ficha de usuario Se realiza la petición del usuario",
+                  "timedOut": null,
+                  "duration": 1390,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "73a2e1d1-5b36-4fe3-a60d-cb6959acf6b5",
+                  "parentUUID": "fbfdbb2d-9247-4fa4-b844-64ede3d526f2",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Se muestra la ficha",
+                  "fullTitle": "Dashboard Ficha de usuario Se muestra la ficha",
+                  "timedOut": null,
+                  "duration": 63,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "1689f82d-5e2b-465d-b9ec-b8c4ca838fc4",
+                  "parentUUID": "fbfdbb2d-9247-4fa4-b844-64ede3d526f2",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "El título se muestra bien",
+                  "fullTitle": "Dashboard Ficha de usuario El título se muestra bien",
+                  "timedOut": null,
+                  "duration": 37,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "",
+                  "err": {},
+                  "uuid": "dc1b4e1e-19ef-4038-8024-751356cdb7c5",
+                  "parentUUID": "fbfdbb2d-9247-4fa4-b844-64ede3d526f2",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "73a2e1d1-5b36-4fe3-a60d-cb6959acf6b5",
+                "1689f82d-5e2b-465d-b9ec-b8c4ca838fc4",
+                "dc1b4e1e-19ef-4038-8024-751356cdb7c5"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1490,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "Report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": false
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "reportDir": "reports",
+        "reportFilename": "Report",
+        "code": "false"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

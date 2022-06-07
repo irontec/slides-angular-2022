@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.9090" tests="7" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-06-07T16:33:30" tests="0" file="cypress/e2e/my-movie-app/02-peliculas.cy.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Peliculas" timestamp="2022-06-07T16:33:30" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Listado de películas" timestamp="2022-06-07T16:33:31" tests="3" time="1.6440" failures="0">
+    <testcase name="Peliculas Listado de películas Accedemos al listado y se realiza la petición de peliculas" time="1.5020" classname="Accedemos al listado y se realiza la petición de peliculas">
+    </testcase>
+    <testcase name="Peliculas Listado de películas El path es el correcto" time="0.0340" classname="El path es el correcto">
+    </testcase>
+    <testcase name="Peliculas Listado de películas Se muestran 20 películas" time="0.1080" classname="Se muestran 20 películas">
+    </testcase>
+  </testsuite>
+  <testsuite name="Ficha película" timestamp="2022-06-07T16:33:32" tests="4" time="1.2650" failures="0">
+    <testcase name="Peliculas Ficha película Accedemos a la descripción de la película y se muestra el detalle" time="0.2150" classname="Accedemos a la descripción de la película y se muestra el detalle">
+    </testcase>
+    <testcase name="Peliculas Ficha película La ficha tiene una imagen jpg" time="0.1260" classname="La ficha tiene una imagen jpg">
+    </testcase>
+    <testcase name="Peliculas Ficha película La sinopsis tiene contenido" time="0.0750" classname="La sinopsis tiene contenido">
+    </testcase>
+    <testcase name="Peliculas Ficha película El botón se activa al rellenar el formulario" time="0.8490" classname="El botón se activa al rellenar el formulario">
+    </testcase>
+  </testsuite>
+</testsuites>
